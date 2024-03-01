@@ -3,8 +3,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap');
 
-:root{
-    font-size: 16px; /* tamanho da base do rm*/
+
+
+
+/* Alguns valores de propriedades não tem unidade de medida.
+Exemplo: line-height, aspect-ratio, font-weight*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: nome;
+    box-sizing: border-box; /* box-sizing: como o css calcula o tamanho dos elementos */
+    scroll-behavior: ;
+}
+
+
+
+:root { /* root-> elemento raiz (html), mais alta hierarquia*/
+    font-size: 16px; /* tamanho da base do rem*/
+    scroll-behavior: smooth; /* comportamento da rolagem: suave*/
 }
 
 body {
@@ -13,7 +30,7 @@ body {
     margin: auto; /* criar margem automatica*/
     font-size: 20px; /*o padrao é 16px*/
     font-family: "Oswald", sans-serif;
-    font-weight: 30;
+    font-weight: 300;
 }
 
 .nome-curriculo { 
@@ -79,7 +96,31 @@ section#experiencia Profissional {
     font-size: 3rem;
     margin: 2rem; /*shorthand*/
     font-weight: 30;
+    display: flex;
+}
 
+#tecnologias {
+    display: flex; /* exixte varias caixa flexivel */
+justify-content: space-evenly; /* alinha o conteúdo no eixo principal */
+
+}
+/* Combinadores*/
+
+article h1 { /* h1 descendente de article */
+    font-size: 2rem;
+    font-weight: bold; /* bold = 700 */
+}
+article h2 { /* h2 descendente de article */
+    font-size: 1.5rem;
+    font-weight: 600; /* demi-bold (quase negrito) */
+}
+
+article p {
+
+}
+
+article{
+    width: 30%; /* 30% do pai (section id="tecnologias") */
 
 }
 
