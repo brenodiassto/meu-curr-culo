@@ -14,7 +14,7 @@ Exemplo: line-height, aspect-ratio, font-weight*/
     padding: 0;
     border: nome;
     box-sizing: border-box; /* box-sizing: como o css calcula o tamanho dos elementos */
-    scroll-behavior: ;
+    scroll-behavior: 0;
 }
 
 
@@ -25,7 +25,7 @@ Exemplo: line-height, aspect-ratio, font-weight*/
 }
 
 body {
-    background-color: rgb(183, 173, 198);
+    background-color:  rgb(220, 216, 212);
     width: 80vw; /* 80% da viewport width*/
     margin: auto; /* criar margem automatica*/
     font-size: 20px; /*o padrao é 16px*/
@@ -34,7 +34,7 @@ body {
 }
 
 .nome-curriculo { 
-    background-color: bisque;
+    background-color: rgb(220, 216, 212);
     width: 70vw; /* 80% da viewport width*/ 
     font-family: "Anta", sans-serif;
     font-size: 3rem;
@@ -43,7 +43,7 @@ body {
 }
 
 section#apresentacao {
-    background-color: bisque;
+    background-color: rgb(220, 216, 212);
     width: 70vw; /* 80% da viewport width*/ 
     font-family: "Anta", sans-serif;
     font-size: 3rem;
@@ -53,7 +53,7 @@ section#apresentacao {
 
 }
 section#formacao {
-    background-color: darkgoldenrod;
+    background-color: rgb(220, 216, 212);
     width: 70vw; /* 80% da viewport width*/ 
     font-family: "Anta", sans-serif;
     font-size: 3rem;
@@ -61,7 +61,7 @@ section#formacao {
     font-weight: 30;
 }
 section#titulo-secao {
-    background-color:darkgoldenrod ;
+    background-color:rgb(220, 216, 212) ;
     text-transform: uppercase; /* transforma o texto em maiúsculas */
     font-family: "Anta" , sans-serif;
     color: dimgray;
@@ -80,8 +80,8 @@ h2{
     text-transform: uppercase; /* transforma o texto em maiúsculas */
     font-family: "Anta" , sans-serif;
     font-weight: 300;
-    color: dimgray;
-    text-shadow: 2px 2px 2px dimgray; /*deslocamentox deslocamentoy espalhamento cor*/
+    color:  rgb(220, 216, 212);
+    /* text-shadow: 2px 2px 2px dimgray; /*deslocamentox deslocamentoy espalhamento cor*/
     font-size: 1,5rem;
     margin: 1rem;
     padding: 1rem;
@@ -90,7 +90,7 @@ h2{
 
 }
 section#experiencia Profissional {
-    background-color: darkgoldenrod;
+    background-color:  rgb(220, 216, 212);
     width: 70vw; /* 80% da viewport width*/ 
     font-family: "Anta", sans-serif;
     font-size: 3rem;
@@ -101,7 +101,7 @@ section#experiencia Profissional {
 
 #tecnologias {
     display: flex; /* exixte varias caixa flexivel */
-justify-content: space-evenly; /* alinha o conteúdo no eixo principal */
+justify-content: space-between; /* alinha o conteúdo no eixo principal */
 
 }
 /* Combinadores*/
@@ -109,15 +109,50 @@ justify-content: space-evenly; /* alinha o conteúdo no eixo principal */
 article h1 { /* h1 descendente de article */
     font-size: 2rem;
     font-weight: bold; /* bold = 700 */
+    margin: 0 0 1rem 0;
 }
+
 article h2 { /* h2 descendente de article */
     font-size: 1.5rem;
     font-weight: 600; /* demi-bold (quase negrito) */
+    margin: 0 0 1rem 0;    
+}
+
+.autor {
+    font-size: oblique;
+    font-weight: 600;
+    font-size: 80%;
+}
+.data {
+    font-style: oblique;
+    font-size: 80%;    
+
+}
+.continue-lendo {
+    background-color: rgb(12, 12, 100);
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    
+}
+.continue-lendo{
+    color: #ffff;
+    text-decoration: none;
+
+
 }
 
 article p {
-
+    text-align: justify;
+    /* demi-bold (quase negrito) */
+    margin-bottom:  1rem;
 }
+
+/* @TODO
+1. estilizar as demais seçoes
+2. estilizar elementos article
+3. tirar as sombras dos textos
+*/
 
 article{
     width: 30%; /* 30% do pai (section id="tecnologias") */
@@ -125,13 +160,13 @@ article{
 }
 
 .competencia {
-    background-color: gray;
+    background-color:  rgb(220, 216, 212);
     text-transform: uppercase; /* transforma o texto em maiuscula*/
     font-family: "Kanit", sans-serif;
 }
 
 .idiomas {
-    background-color: darkgrey;
+    background-color:  rgb(220, 216, 212);
     text-transform: uppercase; /* transforma o texto em maiúsculas */
     font-family: "Anta" , sans-serif;
     color: dimgray;
