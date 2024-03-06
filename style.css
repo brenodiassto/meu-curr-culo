@@ -22,6 +22,9 @@ Exemplo: line-height, aspect-ratio, font-weight*/
 :root { /* root-> elemento raiz (html), mais alta hierarquia*/
     font-size: 16px; /* tamanho da base do rem*/
     scroll-behavior: smooth; /* comportamento da rolagem: suave*/
+    --cor-primaria-texto: #353535;
+    --padding-padrao-secao: 40px;
+    --cor-fundo-tags: #bebebe;
 }
 
 body {
@@ -30,7 +33,7 @@ body {
     margin: auto; /* criar margem automatica*/
     font-size: 20px; /*o padrao é 16px*/
     font-family: "Oswald", sans-serif;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 .nome-curriculo { 
@@ -40,9 +43,14 @@ body {
     font-size: 3rem;
     margin: 2rem; /*shorthand*/
     font-weight: 30;
+    color: var (--cor-primaria-texto)
 }
 
-section#apresentacao {
+section {
+    padding: 40px;
+    background-color: rgb(220, 216, 212);
+}
+#apresentacao {
     background-color: rgb(220, 216, 212);
     width: 70vw; /* 80% da viewport width*/ 
     font-family: "Anta", sans-serif;
@@ -52,7 +60,7 @@ section#apresentacao {
 
 
 }
-section#formacao {
+#formacao {
     background-color: rgb(220, 216, 212);
     width: 70vw; /* 80% da viewport width*/ 
     font-family: "Anta", sans-serif;
@@ -60,7 +68,7 @@ section#formacao {
     margin: 2rem; /*shorthand*/
     font-weight: 30;
 }
-section#titulo-secao {
+#titulo-secao {
     background-color:rgb(220, 216, 212) ;
     text-transform: uppercase; /* transforma o texto em maiúsculas */
     font-family: "Anta" , sans-serif;
@@ -89,6 +97,15 @@ h2{
     padding: 1rem;
 
 }
+
+.lista-tags li {
+    display: inline block;
+    background-color: #e6dfdf;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px 0;
+    color: var(--cor-primaria-texto);
+}
 section#experiencia Profissional {
     background-color:  rgb(220, 216, 212);
     width: 70vw; /* 80% da viewport width*/ 
@@ -97,6 +114,7 @@ section#experiencia Profissional {
     margin: 2rem; /*shorthand*/
     font-weight: 30;
     display: flex;
+    color: var(--cor-primaria-texto);
 }
 
 #tecnologias {
@@ -110,6 +128,7 @@ article h1 { /* h1 descendente de article */
     font-size: 2rem;
     font-weight: bold; /* bold = 700 */
     margin: 0 0 1rem 0;
+    color: var(--cor-primaria-texto);
 }
 
 article h2 { /* h2 descendente de article */
@@ -133,12 +152,18 @@ article h2 { /* h2 descendente de article */
     padding: .5rem 1rem;
     margin-top: 1rem;
     border-radius: 8px;
-    
-}
-.continue-lendo{
     color: #ffff;
     text-decoration: none;
+    
+}
+.continue-Lendo {
+    background-color: rgb(12, 12, 100);
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
 
+    color: #fff;
+    text-decoration: none;
 
 }
 
@@ -146,7 +171,17 @@ article p {
     text-align: justify;
     /* demi-bold (quase negrito) */
     margin-bottom:  1rem;
+    height: 150px;
+    overflow: hidden; /*transbordamento: escondido*/
 }
+
+
+#apresentacao, #formacaoAcademica, #experienciaProfissional, #hardskills, #softSrill,
+#idiomas {
+    padding: 40px;
+}
+    /*acima digitado #apresentação para estilizar as seccoes do html*/
+
 
 /* @TODO
 1. estilizar as demais seçoes
@@ -154,8 +189,11 @@ article p {
 3. tirar as sombras dos textos
 */
 
-article{
+article {
     width: 30%; /* 30% do pai (section id="tecnologias") */
+    background-color:  rgb(220, 216, 212);
+    padding: 2rem;
+
 
 }
 
@@ -163,6 +201,12 @@ article{
     background-color:  rgb(220, 216, 212);
     text-transform: uppercase; /* transforma o texto em maiuscula*/
     font-family: "Kanit", sans-serif;
+    color: dimgray;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 1 rem;
+    border: 0rem;
+    padding: 1rem;
 }
 
 .idiomas {
