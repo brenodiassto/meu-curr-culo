@@ -25,15 +25,59 @@ Exemplo: line-height, aspect-ratio, font-weight*/
     --cor-primaria-texto: #353535;
     --padding-padrao-secao: 40px;
     --cor-fundo-tags: #bebebe;
+
+    /*Tema: light */
+
+    --plano-fundo: #ffffff;
+    --cor-primaria-texto:  #353535;
+    --cor-fundo-tags: #bebebe;
+
 }
 
+[ data-tema="dark"] {
+    --plano-fundo: #353535;
+    --cor-primaria-texto: #ffffff;
+    --cor-fundo-tags: #353535;
+    --cor-fundo-apresentacao: #7f7ae8;
+    --cor-fundo-formacao: #7f7a95;
+    --cor-fundo-academia: #caf6ca;
+    --cor-fundo-experienciaProfissional: #fff890;
+    --cor-fundo-competenciaTecnica: #f7c7dc;
+    --cor-fundo-softSkill: #7eafab;
+    --cor-fundo-idiomas: #a586a5;
+    --cor-fundo-destaques: #e29191;
+    --cor-fundo-tecnologias: #3e3ec3;
+
+}
+
+    
+[data-tema="light"] {
+    --plano-fundo: #353535;
+    --cor-primaria-texto: #ffffff;
+    --cor-fundo-tags: #353535;
+    --cor-fundo-apresentacao: #7f7447;
+    --cor-fundo-formacao: #54449b;
+    --cor-fundo-academia: #2d6635;
+    --cor-fundo-experienciaProfissional: #f23b3b;
+    --cor-fundo-competenciaTecnica: #c65c10;
+    --cor-fundo-softskill: #b3319f;
+    --cor-fundo-idiomas: #68623d;
+    --cor-fundo-destaques: #752626;
+    --cor-fundo-tecnologias: #20205c;
+
+
+}
+
+
+
 body {
-    background-color:  rgb(220, 216, 212);
+    background-color:  var(--plano-fundo);
     width: 80vw; /* 80% da viewport width*/
     margin: auto; /* criar margem automatica*/
     font-size: 20px; /*o padrao é 16px*/
     font-family: "Oswald", sans-serif;
     font-weight: 100;
+
 }
 
 .nome-curriculo { 
