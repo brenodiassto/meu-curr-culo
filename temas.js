@@ -1,4 +1,4 @@
-document.querySelector('#btTrocaTema').addEventListener('click', function ()  {
+document.querySelector('#btTrocaTema').addEventListener('click',  () => {
     //pegar elemento com o tema
     //se o tema for light, entao mude o atributo para dark
     //se nao for, entao mude o atributo para light
