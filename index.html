@@ -14,20 +14,23 @@
       <button type="button" id="btTrocaTema">Trocar tema</button>
 
 
-      <h1 class="nome-curriculo">Breno Dias Santos</h1>
+      <h1 id="nome-curriculo">Breno Dias Santos</h1>
 
     </header>
-    
-    <section id="apresentacao">
-          <h2 class="titulo-secao"> Apresentação </h2>
-
+    <main>
+      <section id="main">
+          <section id="apresentacao">
+              <h2 class="Apresentacao"> Apresentação </h2>
+            <ul>
           <h3>Sobre mim</h3>
           <p>Sou o Breno Dias Santos, 51 anos, solteiro, estudante de Programação/Desenvolverdor Front-End 
             no Senai/SP.    
           </p> 
-          <h2>Contato</h2>
+          <footer>
+              <h2>Contato</h2>
           <p><a href="mailto:t.urun.@gmail.com">t.urun.go@gmail.com</a></p>
-
+          </ul>
+        </footer>
         </section>
           <section id="formacaoAcademica">
              <h2 class="formacao">Formação acadêmica</h2>
@@ -54,46 +57,57 @@
              </div>
           </section>
 
-          <section id="soft-Skill">
+          <section id="soft-Skill" class="lista-tag">
             <h2 class="softskil">Soft Skill</h2>
-            <div>
+            <div> <ul>
          <p>
-      <li>HTML</li>  <li>CSS</li>  <li>JavaScript</li>  <li>Git</li>
+      <li>HTML</li>  <l1i>CSS</li>  <li>JavaScript</li>  <li>Git</li>
       <li>GitHub</li>  <li>GitHub Actions</li>  <li>Word</li>
       <li>GitHub Pages</li>  <li>PoweShell</li>  <li>Power Point</li>
       <li>Micrisoft 365</li>  <li>Excel</li>  <li>Access</li>
-         </p> </div>
-      
+         </p>
+        </ul>
+         </div>     
          
           </section>
     
     
-         <section id="hardskil">
-           <h2 class="hard-skil">Hard Skill</h2>
-           <div>
+         <section id="hardskil" class="lista-tag">
+           <h2"hard-skil">Hard Skill</h2>
+           <div> <ul>
            <p>
-    <ul class="lista-tags">
+    
       <li>Senso de autoresponsabilidade</li>
       <li>Liderança</li>  <li>Gestão de tempo</li>
       <li>Empatia</li>  <li>Resiliência</li>  <li>Organização</li>  
       <li>Proatividade</li>  <li>Trabalho em equipe</li>
-      </div>
+    </ul></div>
     </p>
 
-    </ul>
-    </section>
+        </section>
 
     <section in="idiomas">
     <h2 class="idioma">Idiomas</h2>
+    <table>
+      <tr>
+        <th>
+          idiomas
+        </th>
+        <th>
+        Nível
+        </th>
+      </tr>
     <div>
       <p>Espanhol: Básico</p>
       <p>Inglês: Básico leitura</p>
+      </tr>
     </div>
     </section>
 
-    <section in="destaques">
+    <section in="destaques"  class="lista-tag">
     <h2 class="destaques">Destaques</h2>
-      <p>Iniciativa, Colaboração, Otimismo, Conhecimento técnico e Científico em Saúde.</p>
+      <li>Iniciativa</li>   <li>Colaboração</li>  <li>Otimismo</li> 
+     <li>Conhecimento Técnico e Científico em Saúde</li>
     </section>
 
     <!-- div style="font-size: 20px;">
@@ -102,25 +116,27 @@
     </p>
     </div-->
 
+
     <section id="tecnologias">
-      <article>
-        <header>
+      <section>
+          <article>
+             <header class="span">
           <h1>Aprendendo HTML</h1>
           <h2>Criando uma Página com HTML semântico</h2>
-          <p class="ator">Breno Dias</p>
-          <p class="data">1º mar 2024</p>
+          <span class="autor">Breno Dias</span>
+          <span class="data">1º mar 2024</span>
         </article>
+        </section>
           </header>
         <article>
           <header>
 
-        <p>Nesta página, apesar de não ficar visível para o usuário, a estrutura do HTML segue
-          um padrão semântico em que.... <a class="continue-lendo" href="#">Continue lendo</a></span>
-          <h1>Aprendendo HTML</h1>
+            <h1>Aprendendo HTML</h1>
           <h2>Criando uma página com HTML semântico</h2>
           <span class="autor">Breno Dias</span>
           <span class="data">1º mar 2024</span>
-
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos error laboriosam voluptate corporis quos dolorem eligendi, tempora atque, hic quidem quasi. Itaque, iste ut voluptatum labore praesentium unde voluptatibus deserunt?</p>
+            <a href="#" class="continueLendo">continue lendo</a>
         </article>
            </header>
 
@@ -131,15 +147,27 @@
           <h1>Sextou famíliaaa!!</h1>
           <h2>A dúvida  da sexta, com amigos, breja e churras?</h2>
           <span class="autor">Breno Dias</span>
-          <span class="data"> 1º mar 2024</span>
-
-        </header>
+          <span class="data">1º mar 2024</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum maiores omnis aut iure excepturi ut saepe temporibus, quae voluptatum totam itaque quibusdam architecto consequatur aperiam quasi repellendus ab adipisci labore.</p>
+           <a href="#" class="continue lendo">continue lendo</a>   
+        
+          </header>
           </article>
+          </section>
 
-          <style>        
+
+          <style> 
+          blockquote:before,
+          q:before {
+            content: '<';
+          }
+        c       
     </style>
 
     </section>
+    </main>
+
+
     <script src="temas.js"></script>
 
     </div>

@@ -73,6 +73,12 @@ body {
     font-size: 20px; /*o padrao é 16px*/
     font-family: "DM Sans", sans-serif;
     font-weight: 200;
+    color: #375849;
+    border: 2px solid #3e3ec3 ;
+    background-color: var(--cor-fundo);
+    color: var(--cor-fundo-texto);
+
+
 
 }
 
@@ -82,8 +88,25 @@ body {
     font-size: 3rem;
     margin: 2rem 1rem 3rem 4rem; /*shorthand*/    
     color: var (--cor-primaria-texto)
+    text-align: center;
+
 }
 
+heder {
+    text-align: center;
+    top: 25px;
+    padding: 10px;
+
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2rem;
+
+
+}
 section {
     padding: 40px 0;
     /* prenchimento [interno] */
@@ -117,6 +140,12 @@ h2 {
     /* text-shadow: 1px 1px 2px dimgray; */
     font-size: 1.5rem;
     margin: 1rem 0;
+    
+
+    footer {
+        text-align: center;
+    }
+    
    
 
 }
