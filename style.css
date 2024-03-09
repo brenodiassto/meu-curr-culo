@@ -88,7 +88,7 @@ body {
     font-size: 3rem;
     margin: 2rem 1rem 3rem 4rem; /*shorthand*/    
     color: var (--cor-primaria-texto)
-    text-align: center;
+    text-align center;
 
 }
 
