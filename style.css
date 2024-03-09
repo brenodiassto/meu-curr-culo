@@ -20,48 +20,46 @@ Exemplo: line-height, aspect-ratio, font-weight*/
 :root { /* root-> elemento raiz (html), mais alta hierarquia*/
     font-size: 16px; /* tamanho da base do rem*/
     scroll-behavior: smooth; /* comportamento da rolagem: suave*/
-    --cor-primaria-texto: #353535;
-                             --padding-padrao-secao: 40px;
-    --cor-fundo-tags: #bebebe;
+    --cor-primaria-texto: #14b168;
+     --padding-padrao-secao: 40px;
+    --cor-fundo-tags: #db8181;
 
     /*Tema: light */
 
-    --plano-fundo: #ffffff;
-    --cor-primaria-texto:  #353535;
-    --cor-fundo-tags: #bebebe;
 
 }
 
 [ data-tema="dark"] {
     --plano-fundo: #353535;
-    --cor-primaria-texto: #ffffff;
-    --cor-fundo-tags: #353535;
+    --cor-primaria-texto: #0e0101;
+    --cor-fundo-tags: #788094;
     --cor-fundo-apresentacao: #7f7ae8;
-    --cor-fundo-formacao: #7f7a95;
+    --cor-fundo-formacaoAcademica: #7f7a95;
     --cor-fundo-academia: #caf6ca;
     --cor-fundo-experienciaProfissional: #fff890;
-    --cor-fundo-competenciaTecnica: #f7c7dc;
-    --cor-fundo-softSkill: #7eafab;
+    --cor-fundo-hardskill: #f7c7dc;
+    --cor-fundo-soft-Skill: #7eafab;
     --cor-fundo-idiomas: #a586a5;
     --cor-fundo-destaques: #e29191;
     --cor-fundo-tecnologias: #3e3ec3;
 
+    
 }
 
     
 [data-tema="light"] {
-    --plano-fundo: #353535;
-    --cor-primaria-texto: #ffffff;
-    --cor-fundo-tags: #353535;
+    --plano-fundo: #4216e0;
+    --cor-primaria-texto: #181111;
+    --cor-fundo-tags: #424457;
     --cor-fundo-apresentacao: #7f7447;
-    --cor-fundo-formacao: #54449b;
+    --cor-fundo-formacaoAcademica: #54449b;
     --cor-fundo-academia: #2d6635;
     --cor-fundo-experienciaProfissional: #f23b3b;
     --cor-fundo-competenciaTecnica: #c65c10;
     --cor-fundo-softskill: #b3319f;
     --cor-fundo-idiomas: #68623d;
     --cor-fundo-destaques: #752626;
-    --cor-fundo-tecnologias: #20205c;
+    --cor-fundo-tecnologias: #6d9e1e;
 
 
 }
@@ -69,92 +67,76 @@ Exemplo: line-height, aspect-ratio, font-weight*/
 
 
 body {
-    background-color:  var(--plano-fundo);
+    background-color:  #375849;
     width: 80vw; /* 80% da viewport width*/
     margin: auto; /* criar margem automatica*/
     font-size: 20px; /*o padrao é 16px*/
-    font-family: "Oswald", sans-serif;
-    font-weight: 100;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 200;
 
 }
 
 .nome-curriculo { 
-    background-color: rgb(220, 216, 212);
-    width: 70vw; /* 80% da viewport width*/ 
+    
     font-family: "Anta", sans-serif;
     font-size: 3rem;
-    margin: 2rem; /*shorthand*/
-    font-weight: 30;
+    margin: 2rem 1rem 3rem 4rem; /*shorthand*/    
     color: var (--cor-primaria-texto)
 }
 
 section {
-    padding: 40px;
-    background-color: rgb(220, 216, 212);
+    padding: 40px 0;
+    /* prenchimento [interno] */
 }
+
+section p {
+    color: var(--cor-primaria-texto);
+}
+
 #apresentacao {
-    background-color: rgb(220, 216, 212);
-    width: 70vw; /* 80% da viewport width*/ 
-    font-family: "Anta", sans-serif;
-    font-size: 3rem;
-    margin: 2rem; /*shorthand*/
-    font-weight: 30;
+    background-color: #4f2b7902;
+    background-color: var(--cor-fundo-apresentacao); 
 
 
 }
-#formacao {
-    background-color: rgb(220, 216, 212);
-    width: 70vw; /* 80% da viewport width*/ 
-    font-family: "Anta", sans-serif;
-    font-size: 3rem;
-    margin: 2rem; /*shorthand*/
-    font-weight: 30;
+#formacaoAcademica {
+    background-color: #7f7a95;
+    background-color: var(--cor-fundo-formacaoAcademica);
 }
-#titulo-secao {
-    background-color:rgb(220, 216, 212) ;
-    text-transform: uppercase; /* transforma o texto em maiúsculas */
-    font-family: "Anta" , sans-serif;
-    color: dimgray;
-    font-size: 2rem;
-    margin: 1rem;
-    padding: 1 rem;
-    border: 0rem;
-    padding: 1rem;
-} 
+
+
 p {
     line-height: 1,5; /*altura da linha: 1,5x o tamanho padrão*/
-    margin: 1rem; /* valores: coma-baixo esquerda-direita*/
+    margin: 1rem 0; /* valores: coma-baixo esquerda-direita*/
     
 }
-h2{
+h2 {
     text-transform: uppercase; /* transforma o texto em maiúsculas */
-    font-family: "Anta" , sans-serif;
-    font-weight: 300;
-    color:  rgb(220, 216, 212);
-    /* text-shadow: 2px 2px 2px dimgray; /*deslocamentox deslocamentoy espalhamento cor*/
-    font-size: 1,5rem;
-    margin: 1rem;
-    padding: 1rem;
-    border:  1rem;    
-    padding: 1rem;
+    font-weight: 200;
+    color: var(--cor-primaria-texto);
+    /* text-shadow: 1px 1px 2px dimgray; */
+    font-size: 1.5rem;
+    margin: 1rem 0;
+   
 
 }
 
 .lista-tags li {
-    display: inline block;
-    background-color: #e6dfdf;
+    display: inline-block;
+    background-color: var(--cor-fundo-tags);
     padding: 5px;
     border-radius: 4px;
     margin: 5px 0;
     color: var(--cor-primaria-texto);
 }
-section#experiencia Profissional {
-    background-color:  rgb(220, 216, 212);
-    width: 70vw; /* 80% da viewport width*/ 
+
+#experienciaProfissional {
+    background-color:  rgb(138, 81, 23);
+    width: 80vw; /* 80% da viewport width*/ 
     font-family: "Anta", sans-serif;
-    font-size: 3rem;
-    margin: 2rem; /*shorthand*/
-    font-weight: 30;
+    font-size: 1rem;
+    margin: 0rem; /*shorthand*/
+    font-weight: 40;
     display: flex;
     color: var(--cor-primaria-texto);
 }
@@ -176,13 +158,14 @@ article h1 { /* h1 descendente de article */
 article h2 { /* h2 descendente de article */
     font-size: 1.5rem;
     font-weight: 600; /* demi-bold (quase negrito) */
-    margin: 0 0 1rem 0;    
+    margin: 0 0 1rem 0;  
+    color: var(--cor-primaria-texto);  
 }
 
 .autor {
     font-size: oblique;
-    font-weight: 600;
-    font-size: 80%;
+    font-weight: 900;
+    font-size: 90%;
 }
 .data {
     font-style: oblique;
@@ -190,23 +173,21 @@ article h2 { /* h2 descendente de article */
 
 }
 .continue-lendo {
-    background-color: rgb(12, 12, 100);
+    background-color: rgb(71, 71, 206);
     padding: .5rem 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     border-radius: 8px;
-    color: #ffff;
+    color: #120b7a;
     text-decoration: none;
     
 }
 .continue-Lendo {
-    background-color: rgb(12, 12, 100);
+    background-color: rgb(71, 71, 206);
     padding: .5rem 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     border-radius: 8px;
-
     color: #fff;
     text-decoration: none;
-
 }
 
 article p {
@@ -218,8 +199,8 @@ article p {
 }
 
 
-#apresentacao, #formacaoAcademica, #experienciaProfissional, #hardskills, #softSrill,
-#idiomas {
+#apresentacao, #formacaoAcademica, #experienciaProfissional, #hardskills, #soft-Srill,
+#idiomas, #destaques, #tecnoligias {
     padding: 40px;
 }
     /*acima digitado #apresentação para estilizar as seccoes do html*/
@@ -233,35 +214,42 @@ article p {
 
 article {
     width: 30%; /* 30% do pai (section id="tecnologias") */
-    background-color:  rgb(220, 216, 212);
+    background-color: var(--cor-fundo-tags);
     padding: 2rem;
-
+    background-color: #cecece;
 
 }
 
-.competencia {
-    background-color:  rgb(220, 216, 212);
-    text-transform: uppercase; /* transforma o texto em maiuscula*/
-    font-family: "Kanit", sans-serif;
-    color: dimgray;
+#idiomas {    
+    background-color:  rgb(117, 138, 23);
+    width: 80vw; /* 80% da viewport width*/ 
+    font-family: "Anta", sans-serif;
+    font-size: 1rem;
+    margin: 0rem; /*shorthand*/
+    font-weight: 40;
+    display: flex;
+    color: var(--cor-primaria-texto);
+
+}
+
+#soft-skill {   
+    background-color:  rgb(138, 81, 23);
+    width: 80vw; /* 80% da viewport width*/ 
+    font-family: "Anta", sans-serif;
     font-size: 2rem;
-    margin: 1rem;
-    padding: 1 rem;
-    border: 0rem;
-    padding: 1rem;
+    margin: 0rem; /*shorthand*/
+    font-weight: 40;
+    display: flex;
+    color: var(--cor-primaria-texto);
 }
 
-.idiomas {
-    background-color:  rgb(220, 216, 212);
-    text-transform: uppercase; /* transforma o texto em maiúsculas */
-    font-family: "Anta" , sans-serif;
-    color: dimgray;
-    font-size: 2rem;
-    margin: 1rem;
-    padding: 1 rem;
-    border: 0rem;
-    padding: 1rem;
 
 
+#hardskill {
+    background-color: #d2d8dd;
+    background-color: var(--cor-fundo-hardskill);
 }
-
+#destaques {
+    background-color: #14e241;
+    background-color: var(--cor-fundo-destaques);
+}
