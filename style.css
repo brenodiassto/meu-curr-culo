@@ -14,16 +14,14 @@ Exemplo: line-height, aspect-ratio, font-weight*/
     padding: 0;
     border: nome;
     box-sizing: border-box; /* box-sizing: como o css calcula o tamanho dos elementos */
-    scroll-behavior: 0;
+
 }
-
-
 
 :root { /* root-> elemento raiz (html), mais alta hierarquia*/
     font-size: 16px; /* tamanho da base do rem*/
     scroll-behavior: smooth; /* comportamento da rolagem: suave*/
     --cor-primaria-texto: #353535;
-    --padding-padrao-secao: 40px;
+                             --padding-padrao-secao: 40px;
     --cor-fundo-tags: #bebebe;
 
     /*Tema: light */
